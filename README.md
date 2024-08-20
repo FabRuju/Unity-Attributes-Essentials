@@ -49,6 +49,29 @@ public int someVariable;
 public int someVariable;
 
 /*You can customize the Alignment as well like this, the HEX strings are OPTIONAL
-  to place, you can even only put the HEX_TextColor if you want */
+  to place, you can even only put the HEX_TextColor if you want. I'm covering what
+  GUIalignment is and how to use it below*/
+
+[H1("This is a header 1", GUIalignment, "#HEX_TextColor", "#HEX_BackgroundColor")]
+public int someVariable;
+
+[H1("This is a header 1", GUIalignment, "#HEX_TextColor")]
+public int someVariable;
+
+[H1("This is a header 1", GUIalignment]
+public int someVariable;
+
+/*Or you can customize all at once like this, the HEX strings are OPTIONAL
+  to place, you can even only put the HEX_TextColor if you want. I'm covering what
+  GUIalignment is and how to use it below*/
+
+[H1("This is a header 1", (float) spacing, GUIalignment, "#HEX_TextColor", "#HEX_BackgroundColor")]
+public int someVariable;
+
+[H1("This is a header 1", (float) spacing, GUIalignment, "#HEX_TextColor")]
+public int someVariable;
+
+[H1("This is a header 1", (float) spacing, GUIalignment)]
+public int someVariable;
 
 ```
