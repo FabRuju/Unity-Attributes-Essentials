@@ -97,7 +97,7 @@ public int someVariable;
 BE CAREFUL, both the Text and Background HEX colors won't work if you dont put "#" at the begining
 For example: "#FFFFFF"
 
-#  What is GUIalignment
+#  What is GUIalignment?
 It is a enum holding various types of built-in alignments
 
 ```c#
@@ -157,6 +157,7 @@ public int someVariable;
 # URL Attribute
 It creates a Field bellow the property with a text that will link to a webpage when clicked
 
+This attribute wont allow multiple usage on one property
 ```c#
 /*You place a string that will be the visible text and a string containing the link when clicked.
   Optionally, just like the Subtitle attribute, you can add a boolean if you want a box to be drawn*/
@@ -179,3 +180,56 @@ public int someVariable;
     "https://github.com/FabRuju/Unity-Attributes-Essentials", GUIalignment, true)]
 public int someVariable;
 ```
+
+# Hyperlink Attribute
+It will make the property clickeable that will take you to a webpage
+It contains a tooltip where you can put f.e. where the link is going to take you
+
+It takes only 2 params and the las tone its optional (The tooltip), you can type in whatever you want
+either way it will show the default tooltip "Click to go to the link"
+
+This attribute wont allow multiple usage on one property
+```c#
+//A way to use it customizing the tooltip
+
+[Hyperlink("https://github.com/FabRuju/Unity-Attributes-Essentials", "This is a Hyperlink on a Variable")]
+public int someVariable;
+```
+```c#
+//A way to use it without customizing the tooltip
+
+[Hyperlink("https://github.com/FabRuju/Unity-Attributes-Essentials")]
+public int someVariable;
+```
+
+# HelpBox Attribute
+It creates a Field bellow the property with a HelpBox
+It uses an optional param which is HelpBoxMessageType which is an enum that I will explain bellow
+The default value of this last param is set to Tooltip
+
+This attribute wont allow multiple usage on one property
+
+```c#
+//This is a normal HelpBox with your text
+
+[HelpBox("This is a HelpBox")]
+public int someVariable;
+```
+```c#
+//This is a HelpBox with a custom MessageType
+
+[HelpBox("Wowsy, another HelpBox XD", HelpBoxMessageType)]
+public int someVariable;
+```
+
+# What is HelpBoxMessageType?
+It is a enum holding various types of built-in HelpBox skins
+
+```c#
+HelpBoxMessageType.EmptyBox => //No skin, a simple box drawed bellow the property
+HelpBoxMessageType.WarningBox = //A warning skin, (The yellow Unity icon that sometimes is shown at the console)
+HelpBoxMessageType.ErrorBox = //An error skin, (The red Unity icon that sometimes is shown at the console)
+HelpBoxMessageType.InfoBox =  //The info skin (The gray Unity icon that is shown with Debug.Log)
+```
+
+# Coming Soon ...
