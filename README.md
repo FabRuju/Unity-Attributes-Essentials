@@ -33,7 +33,7 @@ public int someVariable;
 [H1("This is a header 1", "#HEX_TextColor", "#HEX_BackgroundColor")]
 public int someVariable;
 
-[H1("", "#HEX_TextColor")]
+[H1("This is a header 1", "#HEX_TextColor")]
 public int someVariable;
 
 /*You can customize the TopSpacing as well like this, the HEX strings are OPTIONAL
