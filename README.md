@@ -94,3 +94,51 @@ public int someVariable;
 [H3("This is a header 3, the smallest of all of the Headers", (float) spacing, GUIalignment)]
 public int someVariable;
 ```
+BE CAREFUL, both the Text and Background HEX colors won't work if you dont put "#" at the begining
+For example: "#FFFFFF"
+
+#  What is GUIalignment
+It is a enum holding various types of built-in alignments
+
+```c#
+GUIalignment.UpLeft => //Allign text to the UpperLeft part
+GUIalignment.UpCenter => //Allign tex to the UpperCenter part
+GUIalignment.UpRight => //Allign text to the UpperRight part
+
+GUIalignment.MidLeft => //Allign text to the MiddleLeft part
+GUIalignment.MidCenter => //Allign text to the MiddleCenter part
+GUIalignment.MidRight => //Allign text to the MiddleRight part
+
+GUIalignment.BottomLeft => //Allign text to the LowerLeft part
+GUIalignment.BottomCenter => //Allign text to the LowerCenter part
+GUIalignment.BottomRight => //Allign text to the LowerRight part
+```
+
+# Subtitle Attribute
+The structure is simillar to H1, H2, H3 attributes
+it doesnt have a spacing param and instead of HEX_BackgroundColor param, 
+there is a bool that toggles a Box at the background
+This bool's default value is true, but you can change it
+
+This attribute gives either H1 or H2 or H3 a subtitle below.
+The attribute MUST go BELOW either H1 or H2 or H3 attribute, or it will glitch through the inspector properties
+
+Examples:
+
+```c#
+[H1("Title")]
+[Subtitle("This is a header 1 subtitle", GUIalignment, "#HEX_TextColor", false)]
+public int someVariable;
+
+[H3("Title Header 3")]
+[Subtitle("With its subtitle", GUIalignment, "#HEX_TextColor")]
+public int someVariable;
+
+[H3("Another Header3")]
+[Subtitle("This time I won't specify alignment", "#HEX_TextColor")]
+public int someVariable;
+
+[H2("A Header 2")]
+[Subtitle("And now I don't want the Box", "#HEX_TextColor", false)]
+public int someVariable;
+```
