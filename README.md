@@ -19,8 +19,8 @@ Happy coding! 🚀
   * URL Attribute
   * Hyperlink Attribute
 
-# Usage
-H1 Attribute Constructors
+# Usage of H1, H2, H3 Attributes
+H1, H2, H3 Attribute Constructors
 
 ```c#
 //You can use it just like Unity's [Header("")], it is bigger tho
@@ -126,19 +126,56 @@ The attribute MUST go BELOW either H1 or H2 or H3 attribute, or it will glitch t
 Examples:
 
 ```c#
+//This is one way to declare it with text string, alignment, text color, boolean drawBox
+
 [H1("Title")]
 [Subtitle("This is a header 1 subtitle", GUIalignment, "#HEX_TextColor", false)]
 public int someVariable;
+```
+```c#
+//This is another way to declare it with text string, alignment, hex color
 
 [H3("Title Header 3")]
 [Subtitle("With its subtitle", GUIalignment, "#HEX_TextColor")]
 public int someVariable;
+```
+```c#
+//This is another way to declare it with text string and hex color
 
 [H3("Another Header3")]
 [Subtitle("This time I won't specify alignment", "#HEX_TextColor")]
 public int someVariable;
+```
+```c#
+//This is another way to declare it with text string, hex color and boolean drawBox
 
 [H2("A Header 2")]
 [Subtitle("And now I don't want the Box", "#HEX_TextColor", false)]
+public int someVariable;
+```
+
+# URL Attribute
+It creates a Field bellow the property with a text that will link to a webpage when clicked
+
+```c#
+/*You place a string that will be the visible text and a string containing the link when clicked.
+  Optionally, just like the Subtitle attribute, you can add a boolean if you want a box to be drawn*/
+
+[URL("My example URL. It will link you to this repository. The Box is not drawn", 
+    "https://github.com/FabRuju/Unity-Attributes-Essentials", false)]
+public int someVariable;
+```
+```c#
+//Or you can use the default value which is true and leave it blank
+
+[URL("Now I want the Box to appear. I can either place the boolean 'true' or not", 
+    "https://github.com/FabRuju/Unity-Attributes-Essentials")]
+public int someVariable;
+```
+```c#
+//You can play with alignment as well
+
+[URL("I can also play with the alignment =), at the end will always be the drawBox boolean", 
+    "https://github.com/FabRuju/Unity-Attributes-Essentials", GUIalignment, true)]
 public int someVariable;
 ```
