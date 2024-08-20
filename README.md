@@ -97,6 +97,11 @@ public int someVariable;
 BE CAREFUL, both the Text and Background HEX colors won't work if you dont put "#" at the begining
 For example: "#FFFFFF"
 
+- Captures
+
+  ![](Captures/Capture1A.jpg)
+  ![](Captures/Capture1B.jpg)
+  
 #  What is GUIalignment?
 It is a enum holding various types of built-in alignments
 
@@ -153,7 +158,11 @@ public int someVariable;
 [Subtitle("And now I don't want the Box", "#HEX_TextColor", false)]
 public int someVariable;
 ```
+- Captures
 
+  ![](Captures/Capture2A.jpg)
+  ![](Captures/Capture2B.jpg)
+  
 # URL Attribute
 It creates a Field bellow the property with a text that will link to a webpage when clicked
 
@@ -180,7 +189,11 @@ public int someVariable;
     "https://github.com/FabRuju/Unity-Attributes-Essentials", GUIalignment, true)]
 public int someVariable;
 ```
+- Captures
 
+  ![](Captures/Capture3A.jpg)
+  ![](Captures/Capture3B.jpg)
+  
 # Hyperlink Attribute
 It will make the property clickeable that will take you to a webpage
 It contains a tooltip where you can put f.e. where the link is going to take you
@@ -201,7 +214,11 @@ public int someVariable;
 [Hyperlink("https://github.com/FabRuju/Unity-Attributes-Essentials")]
 public int someVariable;
 ```
+- Captures
 
+  ![](Captures/Capture4A.jpg)
+  ![](Captures/Capture4B.jpg)
+  
 # HelpBox Attribute
 It creates a Field bellow the property with a HelpBox
 It uses an optional param which is HelpBoxMessageType which is an enum that I will explain bellow
@@ -231,5 +248,9 @@ HelpBoxMessageType.WarningBox = //A warning skin, (The yellow Unity icon that so
 HelpBoxMessageType.ErrorBox = //An error skin, (The red Unity icon that sometimes is shown at the console)
 HelpBoxMessageType.InfoBox =  //The info skin (The gray Unity icon that is shown with Debug.Log)
 ```
+- Captures
 
+  ![](Captures/Capture5A.jpg)
+  ![](Captures/Capture5B.jpg)
+  
 # Coming Soon ...
