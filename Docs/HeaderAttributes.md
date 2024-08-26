@@ -41,7 +41,7 @@ string text;
 float headerSpacing;
 ```
 3 - Parameter (Enum) to align the header text (e.g., UpperLeft, MiddleCenter).
-```cpp 
+```javascript
 GUIalignment textAlignment;
 ```
 4 - Optional parameter to define the color of the header text using a HEX code.
@@ -72,5 +72,19 @@ public class ExampleScript : MonoBehaviour
 
     // Other fields...
 }
+```
 
+## GUIalignment Enum
+```javascript
+GUIalignment.UpLeft => //Allign text to the UpperLeft part
+GUIalignment.UpCenter => //Allign tex to the UpperCenter part
+GUIalignment.UpRight => //Allign text to the UpperRight part
+
+GUIalignment.MidLeft => //Allign text to the MiddleLeft part
+GUIalignment.MidCenter => //Allign text to the MiddleCenter part
+GUIalignment.MidRight => //Allign text to the MiddleRight part
+
+GUIalignment.BottomLeft => //Allign text to the LowerLeft part
+GUIalignment.BottomCenter => //Allign text to the LowerCenter part
+GUIalignment.BottomRight => //Allign text to the LowerRight part
 ```
