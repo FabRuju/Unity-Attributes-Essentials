@@ -64,10 +64,10 @@ public class ExampleScript : MonoBehaviour
     [H1("Advanced Settings", 10, "#FF5733", "#38383800")]
     public float exampleField2;
 
-    [H1("Additional Options", TextAnchor.MiddleCenter, "#00FF00", "#1E1E1E00")]
+    [H1("Additional Options", GUIalignment.MiddleCenter, "#00FF00", "#1E1E1E00")]
     public string exampleField3;
 
-    [H1("Final Section", 20, TextAnchor.UpperRight, "#FFD700", "#222222FF")]
+    [H1("Final Section", 20, GUIalignment.UpperRight, "#FFD700", "#222222FF")]
     public bool exampleField4;
 
     // Other fields...
