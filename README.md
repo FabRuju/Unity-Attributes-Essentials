@@ -257,5 +257,50 @@ HelpBoxMessageType.InfoBox =  //The info skin (The gray Unity icon that is shown
 
   ![](Captures/Capture5A.jpg)
   ![](Captures/Capture5B.jpg)
-  
+
+# LineDecorator Attribute
+
+### About:
+LineDecorator is a custom Unity attribute that allows you to draw a stylized line in the Unity Inspector, 
+providing better visual organization and separation of properties. 
+This attribute is useful for enhancing the readability of your inspector fields, especially in complex scripts.
+
+### Features
+* Customizable Line Style: Choose from predefined line styles to match your aesthetic or organizational needs.
+* Custom Line Color: Specify a custom line color using a HEX code (default: #C0C0C0).
+* Adjustable Spacing: Optionally add vertical spacing around the line to create more distinct sections in the inspector.
+
+* Parameters
+```c#
+LineSkin lineStyle => //Enum to define the line's style
+int spacing => //Integer to define the vertical space above and below the line.
+string HEX_LineColor = "#C0C0C0" => //Optional parameter to define the line's color using a HEX code.
+```
+This attribute will create a Decorated Line Separator  
+Uses a param which is LineSkin, it is an enum that I will explain bellow
+It is possible to customize the spacing
+You can customize the color of the decorator, but this last param its optional
+Just like the other attributes you need to input the HEX color using '#' at the begining
+
+This attribute allow multiple usage on one property
+
+```c#
+[LineDecorator(LineSkin lineStyle, string HEX_LineColor = "#C0C0C0")]
+
+[LineDecorator(LineSkin lineStyle, int spacing, string HEX_LineColor = "#C0C0C0")]
+```
+
+# What is LineSkin
+Enum holding various types of line skins (designs).
+
+It contains 12 different designs.
+
+```c#
+LineSkin.Custom1  => //Skin 1
+LineSkin.Custom2  => //Skin 2
+LineSkin.Custom3  => //Skin 3
+...
+LineSkin.Custom12 => //Skin 12
+```
+
 # Coming Soon ...
