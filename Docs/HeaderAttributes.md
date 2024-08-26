@@ -40,7 +40,7 @@ string text;
 ```cpp 
 float headerSpacing;
 ```
-3 - Parameter (Enum) to align the header text (e.g., UpperLeft, MiddleCenter).
+3 - Parameter (Enum) to align the header text (e.g., UpperLeft, MiddleCenter). [About this enum](Docs/HeaderAttributes.md#guialignment-enum)
 ```javascript
 GUIalignment textAlignment;
 ```
