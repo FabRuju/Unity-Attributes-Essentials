@@ -10,6 +10,11 @@ PD: The videos are in spanish, if I recieve enough support on this package I wil
 Happy coding! 🚀
 
 # Changelog
+- Added 3 new Attributes 26 / August / 2024
+  * LineDecorator Attribute
+  * Quick Note Attribute
+  * Notes Attribute
+    
 - Added 7 new Attributes 19 / August / 2024
   * Header 1 Attribute
   * Header 2 Attribute
