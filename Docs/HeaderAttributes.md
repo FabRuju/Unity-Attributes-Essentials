@@ -13,22 +13,28 @@ The three attributes have the same features, parameters and same constructors
 Just add either [H1] or [H2] or [H3] attribute above any field in your script to create a styled header in the inspector.
 
 ## Constructors
-```c#
+ddd 
+```csharp
+//Creates a header with the specified text, text color, and background color.
 [H1(string text, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
-Creates a header with the specified text, text color, and background color.
-
-[H1(string text, float headerSpacing, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
-Creates a header with the specified text, spacing, text color, and background color.
-
-[H1(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
-Creates a header with the specified text, text alignment, text color, and background color.
-
-[H1(string text, float headerSpacing, GUIalignment textAlignment, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
-Creates a header with the specified text, spacing, text alignment, text color, and background color.
 ```
-Parameters
+```cpp
+//Creates a header with the specified text, spacing, text color, and background color.
+[H1(string text, float headerSpacing, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
+```
+```cpp
+//Creates a header with the specified text, text alignment, text color, and background color.
+[H1(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
+```
+```cpp
+//Creates a header with the specified text, spacing, text alignment, text color, and background color.
+[H1(string text, float headerSpacing, GUIalignment textAlignment, string HEX_text = "#C0C0C0", string HEX_BG = "#38383800")]
+```
+## Parameters
+```c#
 string text: The header text to display.
+float headerSpacing: Optional parameter to define the vertical space above and below the header.
+GUIalignment textAlignment: Parameter to align the header text (e.g., TextAnchor.UpperLeft, TextAnchor.MiddleCenter).
 string HEX_text = "#C0C0C0": Optional parameter to define the color of the header text using a HEX code.
 string HEX_BG = "#38383800": Optional parameter to define the background color of the header using a HEX code.
-float headerSpacing: Optional parameter to define the vertical space above and below the header.
-GUIalignment textAlignment: Optional parameter to align the header text (e.g., TextAnchor.UpperLeft, TextAnchor.MiddleCenter).
+```
