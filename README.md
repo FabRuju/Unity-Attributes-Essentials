@@ -24,8 +24,8 @@ Happy coding! 🚀
   * URL Attribute
   * Hyperlink Attribute
 
-## Documentation
-### H1, H2, H3 Attributes
+# Documentation
+## H1, H2, H3 Attributes
 Attributes designed to enhance the visual organization of fields in the Unity Inspector by creating styled headers. 
 These headers allow for better separation and labeling of different sections within the inspector, improving the readability and structure of your scripts.
 
@@ -35,11 +35,11 @@ These headers allow for better separation and labeling of different sections wit
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/HeaderAttributes.md)
 
-#### Captures
+### Captures
   
   ![](Captures/Capture1B.jpg)
   
-### Subtitle Attribute
+## Subtitle Attribute
 SubtitleAttribute is a custom Unity attribute designed to display descriptive subtitles directly below H1 headers in the Unity Inspector. This attribute enhances the organization and readability of your inspector by providing additional context or instructions for specific sections of your scripts.
 
 > [!IMPORTANT]
@@ -48,11 +48,11 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/HeaderAttributes.md)
 
-#### Captures
+### Captures
 
   ![](Captures/Capture3B.jpg)
   
-### Hyperlink Attribute
+## Hyperlink Attribute
 
 > [!IMPORTANT]
 > For the sake of order, I did not put all the documentation in the README.
@@ -60,11 +60,11 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/HyperlinkAttribute.md)
 
-#### Captures
+### Captures
 
   ![](Captures/Capture4B.jpg)
   
-# HelpBox Attribute
+## HelpBox Attribute
 
 > [!IMPORTANT]
 > For the sake of order, I did not put all the documentation in the README.
@@ -72,11 +72,11 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/HelpBoxAttribute.md)
 
-#### Captures
+### Captures
 
   ![](Captures/Capture5B.jpg)
 
-### LineDecorator Attribute
+## LineDecorator Attribute
 LineDecorator is a custom Unity attribute that allows you to draw a stylized line in the Unity Inspector, 
 providing better visual organization and separation of properties. 
 This attribute is useful for enhancing the readability of your inspector fields, especially in complex scripts.
