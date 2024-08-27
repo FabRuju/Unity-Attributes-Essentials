@@ -1,6 +1,6 @@
 # H1, H2, H3 Header Attributes for Unity
 > [!NOTE]
-> The three attributes have the same features, parameters and same constructors.
+> The three attributes have the same features, parameters and **same constructors**.
 >
 > Just add either [H1] or [H2] or [H3] attribute above any field in your script to create a styled header in the inspector.
 
@@ -64,10 +64,10 @@ public class ExampleScript : MonoBehaviour
     [H1("Main Settings", "#FFFFFF", "#000000")]
     public int exampleField1;
 
-    [H1("Advanced Settings", 10, "#FF5733", "#38383800")]
+    [H2("Advanced Settings", 10, "#FF5733", "#38383800")]
     public float exampleField2;
 
-    [H1("Additional Options", GUIalignment.MiddleCenter, "#00FF00", "#1E1E1E00")]
+    [H3("Additional Options", GUIalignment.MiddleCenter, "#00FF00", "#1E1E1E00")]
     public string exampleField3;
 
     [H1("Final Section", 20, GUIalignment.UpperRight, "#FFD700", "#222222FF")]
