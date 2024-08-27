@@ -26,25 +26,25 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 [SubtitleAttribute(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", bool drawBox = true)]
 ```
 ### Parameters
-The subtitle text to display below the H1 header.
+1 - The subtitle text to display below the H1 header.
 ```c#
 string text
 ```
 [About this enum](#guialignment-enum)
 
-Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
+2 - Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
 ```c#
 GUIalignment textAlignment
 ```
-The GUIalignment enum specifies how the subtitle text is aligned within its container. It includes the following options:
+3 - The GUIalignment enum specifies how the subtitle text is aligned within its container. It includes the following options:
 ```c#
 GUIalignment Enum
 ```
-(Optional) Defines the color of the subtitle text using a HEX code. Defaults to a light gray color.
+4 - (Optional) Defines the color of the subtitle text using a HEX code. Defaults to a light gray color.
 ```c#
 string HEX_text = "#C0C0C0"
 ```
-(Optional) Determines whether the subtitle is enclosed within a box. Setting this to false will display the text without a box. Defaults to true.
+5 - (Optional) Determines whether the subtitle is enclosed within a box. Setting this to false will display the text without a box. Defaults to true.
 ```c#
 bool drawBox = true
 ```
