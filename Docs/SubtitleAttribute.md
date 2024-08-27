@@ -31,6 +31,7 @@ The subtitle text to display below the H1 header.
 string text
 ```
 [About this enum](#guialignment-enum)
+
 Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
 ```c#
 GUIalignment textAlignment
