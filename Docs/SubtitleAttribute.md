@@ -46,13 +46,28 @@ string HEX_text = "#C0C0C0"
 ```c#
 bool drawBox = true
 ```
+### Example
+```cpp
+using UnityEngine;
 
-GUIalignment.UpperLeft
-GUIalignment.UpperCenter
-GUIalignment.UpperRight
-GUIalignment.MiddleLeft
-GUIalignment.MiddleCenter
-GUIalignment.MiddleRight
-GUIalignment.LowerLeft
-GUIalignment.LowerCenter
-GUIalignment.LowerRight
+public class ExampleScript : MonoBehaviour
+{
+    [H1("Player Settings", "#FFFFFF", "#000000")]
+    [Subtitle("Configure the basic player settings below.", "#AAAAAA", true)]
+    public int health;
+    
+    [Subtitle("Adjust movement parameters.", GUIalignment.MiddleCenter, "#00FF00", false)]
+    public float speed;
+    
+    [H1("Enemy Settings", "#FF0000", "#1E1E1E")]
+    [Subtitle("Set enemy behavior and stats.", GUIalignment.UpperRight, "#FFD700", true)]
+    public int enemyCount;
+    
+    [Subtitle("Spawn rate details.", "#CCCCCC")]
+    public float spawnRate;
+    
+    // Other fields...
+}
+```
+
+## GUIalignment
