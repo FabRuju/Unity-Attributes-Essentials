@@ -105,6 +105,10 @@ This attribute is useful for enhancing the readability of your inspector fields,
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/LineDecoratorAttribute.md)
 
+### Captures
+
+  ![](Captures/Capture6B.jpg)
+
 ## Quick Notes Attribute
 QuickNote is a custom Unity attribute that allows you to add and modify quick notes (One line up to 60 characters) directly in the Inspector. 
 This attribute is particularly useful for adding reminders, instructions, or other important notes that you may need to repeat across multiple scripts without the need of re-writing.
@@ -115,6 +119,10 @@ This attribute is particularly useful for adding reminders, instructions, or oth
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/QuickNotesAttribute.md)
 
+### Captures
+
+  ![](Captures/Capture7B.jpg)
+
 ## Notes Attribute
 Notes is a custom Unity attribute that allows you to add detailed, multiline notes directly in the Inspector. 
 This attribute is ideal for writing longer notes, instructions, or documentation that can be edited and organized with ease and that you may need to repeat across multiple scripts without the need of re-writing.
@@ -124,5 +132,9 @@ This attribute is ideal for writing longer notes, instructions, or documentation
 > 
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/NotesAttribute.md)
+
+### Captures
+
+  ![](Captures/Capture8B.jpg)
 
 # Coming Soon ...
