@@ -30,7 +30,7 @@ string text
 ```cpp
 string urlHyperlink
 ```
-3 - (Optional) Specifies the alignment of the text within the box. Uses the GUIalignment enum.
+3 - (Optional) Specifies the alignment of the text within the box. Uses the GUIalignment enum. [About this enum](#guialignment-enum)
 ```javascript
 GUIalignment textAlignment
 ```
