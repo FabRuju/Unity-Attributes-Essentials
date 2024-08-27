@@ -2,7 +2,7 @@
 > [!NOTE]
 > This attribute will display bellow the property.
 > 
-> Add the [HelpBoxAttribute] above any field in your script to display a help box in the inspector.
+> Add the [HelpBox] attribute above any field in your script to display a help box in the inspector.
 
 > [!WARNING]
 > This attribute must be one of the last attributes you add to your property along with other bellow-displayed attributes of this package
@@ -17,7 +17,7 @@ Message Types: Choose from different message types to indicate the nature of the
 
 ### Constructor
 ```javascript
-[HelpBoxAttribute(string helpBoxText, HelpBoxMessageType helpBoxType)]
+[HelpBox(string helpBoxText, HelpBoxMessageType helpBoxType)]
 ```
 ### Parameters
 1 - The text to display inside the help box.
@@ -47,6 +47,7 @@ public class ExampleScript : MonoBehaviour
     // Other fields...
 }
 ```
+
 ## HelpBoxMessageType Enum
 ```javascript
 HelpBoxMessageType.InfoBox => //Displays a blue information box.
