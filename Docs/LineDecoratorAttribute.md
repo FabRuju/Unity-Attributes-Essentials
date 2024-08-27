@@ -23,8 +23,10 @@ int spacing;
 ```
 3 - Optional parameter to define the line's color using a HEX code. [About this enum](#lineskin-enum)
 ```java
-string HEX_LineColor = "#C0C0C0";
+string HEX_LineColor;
 ```
+> [!CAUTION]
+> BE CAREFUL, HEX colors won't work if you dont put "#" at the begining
 
 ### Constructor
 Draws a line with the specified style and color.
