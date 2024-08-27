@@ -21,7 +21,7 @@ LineSkin lineStyle;
 ```cpp
 int spacing;
 ```
-3 - Optional parameter to define the line's color using a HEX code.
+3 - Optional parameter to define the line's color using a HEX code. [About this enum](#lineskin-enum)
 ```java
 string HEX_LineColor = "#C0C0C0";
 ```
