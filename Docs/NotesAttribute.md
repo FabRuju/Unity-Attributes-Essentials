@@ -43,6 +43,9 @@ GUIalignment textAlignment;
 string HEX_text;
 ```
 
+> [!CAUTION]
+> BE CAREFUL, HEX colors won't work if you dont put "#" at the begining
+
 ### Example
 ```cpp
 using UnityEngine;
