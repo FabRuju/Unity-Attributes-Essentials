@@ -27,7 +27,7 @@ string urlHyperlink;
 2 - (Optional) A tooltip that appears when hovering over the hyperlink. This parameter provides additional context or instructions. 
     The default value is "Click to go to the link."
 ```c#
-string tooltip = "Click to go to the link"
+string tooltip;
 ```
 
 ### Example
