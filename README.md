@@ -117,7 +117,7 @@ This attribute is particularly useful for adding reminders, instructions, or oth
 > For the sake of order, I did not put all the documentation in the README.
 > 
 > I divided it into other pages for each attribute. 
-> [Documentation here](Docs/QuickNotesAttribute.md)
+> [Documentation here](Docs/QuickNoteAttribute.md)
 
 ### Captures
 
