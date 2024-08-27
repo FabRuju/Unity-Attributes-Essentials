@@ -70,4 +70,17 @@ public class ExampleScript : MonoBehaviour
 > ### Foldout Arrow and Note Deletion
 > **Foldout Arrow:** Each QuickNote includes a foldout arrow. When opened, it reveals a button that, when clicked, will delete all notes that are not currently visible in the Inspector. This feature helps in managing and organizing your notes effectively.
 
+## GUIalignment Enum
+```javascript
+GUIalignment.UpLeft => //Allign text to the UpperLeft part
+GUIalignment.UpCenter => //Allign tex to the UpperCenter part
+GUIalignment.UpRight => //Allign text to the UpperRight part
 
+GUIalignment.MidLeft => //Allign text to the MiddleLeft part
+GUIalignment.MidCenter => //Allign text to the MiddleCenter part
+GUIalignment.MidRight => //Allign text to the MiddleRight part
+
+GUIalignment.BottomLeft => //Allign text to the LowerLeft part
+GUIalignment.BottomCenter => //Allign text to the LowerCenter part
+GUIalignment.BottomRight => //Allign text to the LowerRight part
+```
