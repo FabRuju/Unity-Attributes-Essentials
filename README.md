@@ -46,7 +46,7 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 > For the sake of order, I did not put all the documentation in the README.
 > 
 > I divided it into other pages for each attribute. 
-> [Documentation here](Docs/HeaderAttributes.md)
+> [Documentation here](Docs/SubtitleAttribute.md)
 
 ### Captures
 
