@@ -17,7 +17,7 @@ Message Types: Choose from different message types to indicate the nature of the
 
 ### Constructor
 ```javascript
-[HelpBoxAttribute(string helpBoxText, HelpBoxMessageType helpBoxType = HelpBoxMessageType.InfoBox)]
+[HelpBoxAttribute(string helpBoxText, HelpBoxMessageType helpBoxType)]
 ```
 ### Parameters
 1 - The text to display inside the help box.
