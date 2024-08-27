@@ -9,7 +9,7 @@ PD: The videos are in spanish, if I recieve enough support on this package I wil
 
 Happy coding! 🚀
 
-# Changelog
+## Changelog
 - Added 3 new Attributes 26 / August / 2024
   * LineDecorator Attribute
   * Quick Note Attribute
@@ -24,87 +24,19 @@ Happy coding! 🚀
   * URL Attribute
   * Hyperlink Attribute
 
-# Usage of H1, H2, H3 Attributes [Documentation here](Docs/HeaderAttributes.md)
-H1, H2, H3 Attribute Constructors
+## Documentation
+### H1, H2, H3 Attributes
+Attributes designed to enhance the visual organization of fields in the Unity Inspector by creating styled headers. 
+These headers allow for better separation and labeling of different sections within the inspector, improving the readability and structure of your scripts.
 
-```c#
-//You can use it just like Unity's [Header("")], it is bigger tho
+> [!IMPORTANT]
+> For the sake of order, I did not put all the documentation in the README.
+> 
+> I divided it into other pages for each attribute. 
+> [Documentation here](Docs/HeaderAttributes.md)
 
-[H1("This is a header 1")]
-public int someVariable;
-```
-```c#
-/*You can customize the Text and BackgroundColor, the HEX strings are OPTIONAL
-  to place, you can even only put the HEX_TextColor if you want*/
-
-[H1("This is a header 1", "#HEX_TextColor", "#HEX_BackgroundColor")]
-public int someVariable;
-
-[H1("This is a header 1", "#HEX_TextColor")]
-public int someVariable;
-```
-```c#
-/*You can customize the TopSpacing as well like this, the HEX strings are OPTIONAL
-  to place, you can even only put the HEX_TextColor if you want*/
-
-[H1("This is a header 1", (float) spacing, "#HEX_TextColor", "#HEX_BackgroundColor")]
-public int someVariable;
-
-[H1("This is a header 1", (float) spacing, "#HEX_TextColor")]
-public int someVariable;
-
-[H1("This is a header 1", (float) spacing)]
-public int someVariable;
-```
-```c#
-/*You can customize the Alignment as well like this, the HEX strings are OPTIONAL
-  to place, you can even only put the HEX_TextColor if you want. I'm covering what
-  GUIalignment is and how to use it below*/
-
-[H1("This is a header 1", GUIalignment, "#HEX_TextColor", "#HEX_BackgroundColor")]
-public int someVariable;
-
-[H1("This is a header 1", GUIalignment, "#HEX_TextColor")]
-public int someVariable;
-
-[H1("This is a header 1", GUIalignment)]
-public int someVariable;
-```
-```c#
-/*Or you can customize all at once like this, the HEX strings are OPTIONAL
-  to place, you can even only put the HEX_TextColor if you want. I'm covering what
-  GUIalignment is and how to use it below*/
-
-[H1("This is a header 1", (float) spacing, GUIalignment, "#HEX_TextColor", "#HEX_BackgroundColor")]
-public int someVariable;
-
-[H1("This is a header 1", (float) spacing, GUIalignment, "#HEX_TextColor")]
-public int someVariable;
-
-[H1("This is a header 1", (float) spacing, GUIalignment)]
-public int someVariable;
-```
-
-H1, H2, H3 works the same way. So it is pretty much the same
-
-* For example *
-
-```c#
-[H1("This is a header 1", (float) spacing, GUIalignment, "#HEX_TextColor", "#HEX_BackgroundColor")]
-public int someVariable;
-
-[H2("This is a header 2, a little bit smaller than header 1", (float) spacing, GUIalignment, "#HEX_TextColor")]
-public int someVariable;
-
-[H3("This is a header 3, the smallest of all of the Headers", (float) spacing, GUIalignment)]
-public int someVariable;
-```
-BE CAREFUL, both the Text and Background HEX colors won't work if you dont put "#" at the begining
-For example: "#FFFFFF"
-
-- Captures
-
-  ![](Captures/Capture1A.jpg)
+#### Captures
+  
   ![](Captures/Capture1B.jpg)
   
 #  What is GUIalignment?
