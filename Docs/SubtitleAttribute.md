@@ -30,9 +30,9 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 ```c#
 string text
 ```
-[About this enum](#guialignment-enum)
-
 2 - Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
+    
+   [About this enum](#guialignment-enum)
 ```c#
 GUIalignment textAlignment
 ```
