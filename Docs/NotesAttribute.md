@@ -33,6 +33,8 @@ A unique identifier for the note. This allows you to repeat or reference the sam
 string textID;
 ```
 (Optional) Specifies the alignment of the note text within the TextArea. Uses the GUIalignment enum.
+
+[About this enum](#guialignment-enum)
 ```javascript
 GUIalignment textAlignment;
 ```
@@ -78,4 +80,3 @@ GUIalignment.BottomLeft => //Allign text to the LowerLeft part
 GUIalignment.BottomCenter => //Allign text to the LowerCenter part
 GUIalignment.BottomRight => //Allign text to the LowerRight part
 ```
-[About this enum](#guialignment-enum)
