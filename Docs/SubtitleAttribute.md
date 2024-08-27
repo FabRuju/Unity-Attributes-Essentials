@@ -48,6 +48,9 @@ string HEX_text = "#C0C0C0"
 ```c#
 bool drawBox = true
 ```
+> [!CAUTION]
+> BE CAREFUL, HEX colors won't work if you dont put "#" at the begining
+
 ### Example
 ```cpp
 using UnityEngine;
