@@ -52,6 +52,9 @@ string HEX_text = "#C0C0C0";
 ```cpp 
 string HEX_BG = "#38383800";
 ```
+> [!CAUTION]
+> BE CAREFUL, HEX colors won't work if you dont put "#" at the begining
+
 ### Examples
 ```cpp
 using UnityEngine;
