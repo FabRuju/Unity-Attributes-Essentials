@@ -42,7 +42,7 @@ string textID
 ```cpp
 string HEX_text = "#C0C0C0"
 ```
-3 - (Optional) Specifies the alignment of the note text. Uses the GUIalignment enum. [About this enum](#guialignment-enum)
+3 - (Optional) Specifies the alignment of the note text. Uses the GUIalignment enum. 
 ```javascript
 GUIalignment textAlignment
 ```
@@ -84,3 +84,4 @@ GUIalignment.BottomLeft => //Allign text to the LowerLeft part
 GUIalignment.BottomCenter => //Allign text to the LowerCenter part
 GUIalignment.BottomRight => //Allign text to the LowerRight part
 ```
+[About this enum](#guialignment-enum)
