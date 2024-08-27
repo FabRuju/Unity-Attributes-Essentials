@@ -30,6 +30,7 @@ The subtitle text to display below the H1 header.
 ```c#
 string text
 ```
+[About this enum](#guialignment-enum)
 Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
 ```c#
 GUIalignment textAlignment
@@ -55,14 +56,16 @@ public class ExampleScript : MonoBehaviour
     [H1("Player Settings", "#FFFFFF", "#000000")]
     [Subtitle("Configure the basic player settings below.", "#AAAAAA", true)]
     public int health;
-    
+
+    [H2("Player Settings", "#FFFFFF", "#000000")]
     [Subtitle("Adjust movement parameters.", GUIalignment.MiddleCenter, "#00FF00", false)]
     public float speed;
     
     [H1("Enemy Settings", "#FF0000", "#1E1E1E")]
     [Subtitle("Set enemy behavior and stats.", GUIalignment.UpperRight, "#FFD700", true)]
     public int enemyCount;
-    
+
+    [H3("Player Settings", "#FFFFFF", "#000000")]
     [Subtitle("Spawn rate details.", "#CCCCCC")]
     public float spawnRate;
     
