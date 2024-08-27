@@ -17,36 +17,35 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 * Text Alignment: Align the subtitle text using the GUIalignment enum, which offers flexibility in positioning the text (left, center, right).
 
 ### Constructors
-Displays a subtitle with specified text, optional text color, and an option to draw a surrounding box.
-Subtitle with Text Alignment
 ```c#
+//Displays a subtitle with specified text, optional text color, and an option to draw a surrounding box.
 [SubtitleAttribute(string text, string HEX_text = "#C0C0C0", bool drawBox = true)]
 ```
-
-
-csharp
-Copiar código
+```c#
+//Displays a subtitle with specified text, text alignment, optional text color, and an option to draw a surrounding box.
 [SubtitleAttribute(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", bool drawBox = true)]
-Displays a subtitle with specified text, text alignment, optional text color, and an option to draw a surrounding box.
-Parameters
-string text
-
+```
+### Parameters
 The subtitle text to display below the H1 header.
-
-GUIalignment textAlignment
-
+```c#
+string text
+```
 Specifies the alignment of the subtitle text. Uses the GUIalignment enum, which mirrors Unity's TextAnchor options.
-
-string HEX_text = "#C0C0C0"
-
-(Optional) Defines the color of the subtitle text using a HEX code. Defaults to a light gray color.
-
-bool drawBox = true
-
-(Optional) Determines whether the subtitle is enclosed within a box. Setting this to false will display the text without a box. Defaults to true.
-
-GUIalignment Enum
+```c#
+GUIalignment textAlignment
+```
 The GUIalignment enum specifies how the subtitle text is aligned within its container. It includes the following options:
+```c#
+GUIalignment Enum
+```
+(Optional) Defines the color of the subtitle text using a HEX code. Defaults to a light gray color.
+```c#
+string HEX_text = "#C0C0C0"
+```
+(Optional) Determines whether the subtitle is enclosed within a box. Setting this to false will display the text without a box. Defaults to true.
+```c#
+bool drawBox = true
+```
 
 GUIalignment.UpperLeft
 GUIalignment.UpperCenter
