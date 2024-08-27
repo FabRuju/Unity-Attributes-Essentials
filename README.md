@@ -50,7 +50,7 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 
 ### Captures
 
-  ![](Captures/Capture3B.jpg)
+  ![](Captures/Capture2B.jpg)
   
 ## Hyperlink Attribute
 Hyperlink is a custom Unity attribute that turns a property's label in the Inspector into a clickable hyperlink. 
@@ -77,6 +77,9 @@ This attribute is ideal for adding reference links, documentation, or external r
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/UrlAttribute.md)
 
+### Captures
+
+ ![](Captures/Capture3B.jpg)
 ## HelpBox Attribute
 HelpBoxAttribute is a custom Unity attribute designed to display informative, warning, or error messages directly in the Inspector. 
 This attribute is useful for providing context, instructions, or alerts to users working with your scripts.
