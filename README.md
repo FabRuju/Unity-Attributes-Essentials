@@ -53,6 +53,8 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
   ![](Captures/Capture3B.jpg)
   
 ## Hyperlink Attribute
+Hyperlink is a custom Unity attribute that turns a property's label in the Inspector into a clickable hyperlink. 
+This attribute is particularly useful for adding documentation links, references, or external resources directly within your scripts, making it easier for users to access relevant information.
 
 > [!IMPORTANT]
 > For the sake of order, I did not put all the documentation in the README.
