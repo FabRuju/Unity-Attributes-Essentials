@@ -14,11 +14,11 @@ Optional Box Display: Choose whether to display the text within a box for better
 ### Constructors
 ```java
 //Displays a box with the specified text, a clickable link icon, and an optional surrounding box.
-[URL(string text, string urlHyperlink, bool drawBox)]
+[URL(string text, string urlHyperlink, bool drawBox = true)]
 ```
 ```java
 //Displays a box with the specified text, a clickable link icon, optional text alignment, and an optional surrounding box.
-[URL(string text, string urlHyperlink, GUIalignment textAlignment, bool drawBox)]
+[URL(string text, string urlHyperlink, GUIalignment textAlignment, bool drawBox = true)]
 ```
 
 ### Parameters
@@ -34,7 +34,7 @@ string urlHyperlink
 ```javascript
 GUIalignment textAlignment
 ```
-4 - (Optional) Determines whether the text and link icon are enclosed within a box. Defaults to true.
+4 - (Optional) Determines whether the text and link icon are enclosed within a box. Default is true.
 ```cpp
 bool drawBox = true
 ```
