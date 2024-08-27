@@ -3,7 +3,7 @@
 > This setup helps in structuring your inspector layout by grouping related fields under clear headings and descriptive subtitles.
 
 > [!IMPORTANT]
-> Add the [SubtitleAttribute] directly below any of this attributes to create a styled subtitle in the inspector:
+> Add the [Subtitle] attribute directly below any of this attributes to create a styled subtitle in the inspector:
 > * H1
 > * H2
 > * H3
@@ -19,11 +19,11 @@ SubtitleAttribute is a custom Unity attribute designed to display descriptive su
 ### Constructors
 ```c#
 //Displays a subtitle with specified text, optional text color, and an option to draw a surrounding box.
-[SubtitleAttribute(string text, string HEX_text = "#C0C0C0", bool drawBox = true)]
+[Subtitle(string text, string HEX_text = "#C0C0C0", bool drawBox = true)]
 ```
 ```c#
 //Displays a subtitle with specified text, text alignment, optional text color, and an option to draw a surrounding box.
-[SubtitleAttribute(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", bool drawBox = true)]
+[Subtitle(string text, GUIalignment textAlignment, string HEX_text = "#C0C0C0", bool drawBox = true)]
 ```
 ### Parameters
 1 - The subtitle text to display below the H1 header.
