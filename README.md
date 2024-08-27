@@ -39,93 +39,12 @@ These headers allow for better separation and labeling of different sections wit
   
   ![](Captures/Capture1B.jpg)
   
-#  What is GUIalignment?
-It is a enum holding various types of built-in alignments
-
-```c#
-GUIalignment.UpLeft => //Allign text to the UpperLeft part
-GUIalignment.UpCenter => //Allign tex to the UpperCenter part
-GUIalignment.UpRight => //Allign text to the UpperRight part
-
-GUIalignment.MidLeft => //Allign text to the MiddleLeft part
-GUIalignment.MidCenter => //Allign text to the MiddleCenter part
-GUIalignment.MidRight => //Allign text to the MiddleRight part
-
-GUIalignment.BottomLeft => //Allign text to the LowerLeft part
-GUIalignment.BottomCenter => //Allign text to the LowerCenter part
-GUIalignment.BottomRight => //Allign text to the LowerRight part
-```
-
 # Subtitle Attribute
-The structure is simillar to H1, H2, H3 attributes
-it doesnt have a spacing param and instead of HEX_BackgroundColor param, 
-there is a bool that toggles a Box at the background
-This bool's default value is true, but you can change it
-
-This attribute gives either H1 or H2 or H3 a subtitle below.
-The attribute MUST go BELOW either H1 or H2 or H3 attribute, or it will glitch through the inspector properties
-
-Examples:
-
-```c#
-//This is one way to declare it with text string, alignment, text color, boolean drawBox
-
-[H1("Title")]
-[Subtitle("This is a header 1 subtitle", GUIalignment, "#HEX_TextColor", false)]
-public int someVariable;
-```
-```c#
-//This is another way to declare it with text string, alignment, hex color
-
-[H3("Title Header 3")]
-[Subtitle("With its subtitle", GUIalignment, "#HEX_TextColor")]
-public int someVariable;
-```
-```c#
-//This is another way to declare it with text string and hex color
-
-[H3("Another Header3")]
-[Subtitle("This time I won't specify alignment", "#HEX_TextColor")]
-public int someVariable;
-```
-```c#
-//This is another way to declare it with text string, hex color and boolean drawBox
-
-[H2("A Header 2")]
-[Subtitle("And now I don't want the Box", "#HEX_TextColor", false)]
-public int someVariable;
-```
-- Captures
-
-  ![](Captures/Capture2A.jpg)
-  ![](Captures/Capture2B.jpg)
-  
-# URL Attribute
-It creates a Field bellow the property with a text that will link to a webpage when clicked
-
-This attribute wont allow multiple usage on one property
-```c#
-/*You place a string that will be the visible text and a string containing the link when clicked.
-  Optionally, just like the Subtitle attribute, you can add a boolean if you want a box to be drawn*/
-
-[URL("My example URL. It will link you to this repository. The Box is not drawn", 
-    "https://github.com/FabRuju/Unity-Attributes-Essentials", false)]
-public int someVariable;
-```
-```c#
-//Or you can use the default value which is true and leave it blank
-
-[URL("Now I want the Box to appear. I can either place the boolean 'true' or not", 
-    "https://github.com/FabRuju/Unity-Attributes-Essentials")]
-public int someVariable;
-```
-```c#
-//You can play with alignment as well
-
-[URL("I can also play with the alignment =), at the end will always be the drawBox boolean", 
-    "https://github.com/FabRuju/Unity-Attributes-Essentials", GUIalignment, true)]
-public int someVariable;
-```
+> [!IMPORTANT]
+> For the sake of order, I did not put all the documentation in the README.
+> 
+> I divided it into other pages for each attribute. 
+> [Documentation here](Docs/HeaderAttributes.md)
 - Captures
 
   ![](Captures/Capture3A.jpg)
