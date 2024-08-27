@@ -65,8 +65,21 @@ This attribute is particularly useful for adding documentation links, references
 ### Captures
 
   ![](Captures/Capture4B.jpg)
-  
+
+## URL Attribute
+URL is a custom Unity attribute that creates an interactive box bellow property in the Inspector, containing a clickable link icon next to custom text. 
+When the box is clicked, the user is redirected to a specified URL. 
+This attribute is ideal for adding reference links, documentation, or external resources directly in your scripts, making them easily accessible.
+
+> [!IMPORTANT]
+> For the sake of order, I did not put all the documentation in the README.
+> 
+> I divided it into other pages for each attribute. 
+> [Documentation here](Docs/UrlAttribute.md)
+
 ## HelpBox Attribute
+HelpBoxAttribute is a custom Unity attribute designed to display informative, warning, or error messages directly in the Inspector. 
+This attribute is useful for providing context, instructions, or alerts to users working with your scripts.
 
 > [!IMPORTANT]
 > For the sake of order, I did not put all the documentation in the README.
@@ -88,4 +101,25 @@ This attribute is useful for enhancing the readability of your inspector fields,
 > 
 > I divided it into other pages for each attribute. 
 > [Documentation here](Docs/LineDecoratorAttribute.md)
+
+## Quick Notes Attribute
+QuickNote is a custom Unity attribute that allows you to add and modify quick notes (One line up to 60 characters) directly in the Inspector. 
+This attribute is particularly useful for adding reminders, instructions, or other important notes that you may need to repeat across multiple scripts without the need of re-writing.
+
+> [!IMPORTANT]
+> For the sake of order, I did not put all the documentation in the README.
+> 
+> I divided it into other pages for each attribute. 
+> [Documentation here](Docs/QuickNotesAttribute.md)
+
+## Notes Attribute
+Notes is a custom Unity attribute that allows you to add detailed, multiline notes directly in the Inspector. 
+This attribute is ideal for writing longer notes, instructions, or documentation that can be edited and organized with ease and that you may need to repeat across multiple scripts without the need of re-writing.
+
+> [!IMPORTANT]
+> For the sake of order, I did not put all the documentation in the README.
+> 
+> I divided it into other pages for each attribute. 
+> [Documentation here](Docs/NotesAttribute.md)
+
 # Coming Soon ...
